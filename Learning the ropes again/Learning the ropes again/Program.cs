@@ -6,5 +6,6 @@
 
         Human H = new Human("001");
 
+       Testing.Main2(args);
     }
 }
