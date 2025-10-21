@@ -8,6 +8,8 @@
 
         //Testing.Main2(args);
        
-        Sort_n_Find.Main3(args);
+        //Sort_n_Find.Main3(args);
+
+        Day2.Main1(args);
     }
 }
