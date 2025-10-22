@@ -1,5 +1,6 @@
 ﻿using System.Security.Cryptography;
 
+
 internal class Program
 {
     static void Main(string[] args)
@@ -12,6 +13,8 @@ internal class Program
 
         //Sort_n_Find.Main3(args);
 
-        Learning_the_ropes_again.Oop.Av2.Program.main();
+        // Learning_the_ropes_again.Oop.Av2.Program.main();
+    
+        BigSum.Day3.testing(args);
     }
 }
