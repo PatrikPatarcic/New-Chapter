@@ -14,6 +14,10 @@
             
             Console.WriteLine(magicStorm.GetAsString());
             Console.WriteLine(dealt.GetAsString());
+
+            Army plantsForHire = Army.Hire(10000);
+
+            Army pantsOnFire = Army.Recruit(10000);
         }
     }
 }
