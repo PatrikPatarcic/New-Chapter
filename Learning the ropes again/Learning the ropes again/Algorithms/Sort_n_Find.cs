@@ -1,4 +1,6 @@
-﻿public class Sort_n_Find
+﻿namespace Algorithms;
+
+public class Sort_n_Find
 {
     private static void Gen_arr(float[] V, int n, int dg, int gg)
     {
@@ -55,7 +57,7 @@
         Console.WriteLine($"{x:F2} not found in the array");
     }
 
-    public static void Main3(string[] args)
+    public static void RunDemo(string[] args)
     {
         int n = 20000000;
         float[] V = new float[n];

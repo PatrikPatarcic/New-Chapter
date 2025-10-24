@@ -1,5 +1,5 @@
 ﻿using System.Numerics;
-
+namespace BigSum;
 public class Day2
 {
     public static void Main1(string[] args)

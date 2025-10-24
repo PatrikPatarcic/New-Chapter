@@ -1,4 +1,6 @@
-﻿public class Testing
+﻿namespace BigSum;
+
+public class Testing
 {
     public static void Main2(string[] args)
     {
