@@ -5,9 +5,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Experimenting();
-    
-        
+        Experimenting(); 
     }
     public static void Experimenting()
     {
@@ -25,7 +23,9 @@ internal class Program
 
         //RunExperiment(new Dice(6, 1), 100, 4);
 
-        Learning_the_ropes_again.Oop.Av2.Program.main();
+        //Learning_the_ropes_again.Oop.Av2.Program.main();
+
+        Learning_the_ropes_again.Oop.Av1.Tester.main();
     }
     public static void RunExperiment(Dice dice, int numberOfMatchedValue, int desiredValue)
     {
