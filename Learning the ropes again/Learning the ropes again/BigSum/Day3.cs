@@ -1,15 +1,9 @@
-﻿using System;
-using System.Globalization;
-using System.IO;
-using System.Numerics;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace BigSum;
+﻿namespace BigSum;
 
 public class Day3
 {
     public static void testing(string[] args)
-    {            
+    {
         long[] numbers = new long[1020];
         int i = 0;
         using (StreamReader reader = new StreamReader("VeryBigNumber.txt"))
@@ -26,9 +20,9 @@ public class Day3
             }
         }
         long newProduct = 1, maxProduct = 1;
-        for (i = 0; i < 1000-13; i++)
+        for (i = 0; i < 1000 - 13; i++)
         {
-            for(long j = i; j < i+13; j++)
+            for (long j = i; j < i + 13; j++)
             {
                 Console.Write($"{j} * ");
                 newProduct *= numbers[j];

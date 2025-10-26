@@ -76,7 +76,7 @@ public class Sort_n_Find
         Console.WriteLine($"Searching took {stopwatch.ElapsedMilliseconds} ms");
 
         stopwatch = System.Diagnostics.Stopwatch.StartNew();
-        
+
         Array.Sort(V);
 
         stopwatch.Stop();

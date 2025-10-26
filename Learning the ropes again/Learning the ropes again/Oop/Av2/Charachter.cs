@@ -13,8 +13,6 @@
 
     public Damage TakeDamage(Damage dealt)
     {
-
-        Damage takenDamage = new Damage((int)(dealt.Physical * resistance.Physical), (int)(dealt.Magical * resistance.Magical), dealt.Core);
-        return takenDamage;
+        return new Damage(dealt.CastName, (int)(dealt.Physical * resistance.Physical), (int)(dealt.Magical * resistance.Magical), dealt.Core);
     }
 }

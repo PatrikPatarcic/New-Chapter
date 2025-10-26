@@ -8,9 +8,9 @@ public class Testing
         long numberr = 720000L;
         long result = 0L;
 
-        for(i = 1L; i < numberr; i++)
+        for (i = 1L; i < numberr; i++)
         {
-            result += i*i % 2 == 1 ? i*i : 0;
+            result += i * i % 2 == 1 ? i * i : 0;
             // System.Console.WriteLine(i * i % 2 == 1 ? i * i : 0);
         }
 
@@ -25,7 +25,7 @@ public class Testing
 
         for (int j = 1; j < 1000; j++)
         {
-            if(j %3 == 0 || j % 5 == 0)
+            if (j % 3 == 0 || j % 5 == 0)
             {
                 SumOfMultiples += j;
             }
@@ -59,9 +59,9 @@ public class Testing
 
         long number = 600851475143;
 
-        for(int j = 2; j <= number; j++)
+        for (int j = 2; j <= number; j++)
         {
-            if(number % j == 0)
+            if (number % j == 0)
             {
                 number /= j;
                 Console.WriteLine(number);

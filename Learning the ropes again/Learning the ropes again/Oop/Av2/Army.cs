@@ -9,7 +9,7 @@
         AmryCount++;
         this.soldiers = soldiers;
 
-        Console.WriteLine("An army has been created.");
+        Helper.Print("An army has been created.", ConsoleColor.Cyan);
         Console.WriteLine(GetArmyInfo());
     }
 

@@ -4,16 +4,20 @@
     {
         internal static void main()
         {
-            Damage fireball = new Damage(0, 50, 0);
+            Test();
+        }
+
+        public static void Test()
+        {
+            Damage fireball = new Damage("FIREBALL", 0, 50, 0);
             Resistance magicArmor = new Resistance(0.1f, 0.6f);
             Charachter Wizard = new Charachter("Harry", fireball, magicArmor);
 
-            Damage magicStorm = new Damage(20, 80, 0);
+            Damage magicStorm = new Damage("MAGIC STORM", 20, 80, 0);
             Damage dealt = Wizard.TakeDamage(magicStorm);
 
-            
-            Console.WriteLine(magicStorm.GetAsString());
-            Console.WriteLine(dealt.GetAsString());
+            fireball.FancyPrint();
+            magicStorm.FancyPrint();
 
             Army plantsForHire = Army.Hire(10000);
 
