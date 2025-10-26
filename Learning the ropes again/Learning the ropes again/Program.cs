@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Security.Cryptography;
 using Jamb;
 
@@ -20,10 +21,32 @@ internal class Program
         //BigSum.Day3.testing(args);
 
         Dice.RunDemo();
+        
+        RunExperiment(new Dice(6, 1), 100, 4);
+    }
 
-        Dice one = new Dice();
+    public static void RunExperiment(Dice dice, int numberOfMatchedValue, int desiredValue)
+    {
+        if (desiredValue < 1 || desiredValue > dice.Sides)
+        {
+            if(desiredValue < 1)
+                Helper.Print("Out of bounds, desired value cannot be less than 1", ConsoleColor.Red);
+            else
+                Helper.Print($"Out of bounds, dice only has {dice.Sides} sides", ConsoleColor.Red);
+            return;
+        }
+        int match = 0, i;
+        for (i = 0;match < numberOfMatchedValue;i++)
+        {
+            dice.Roll();
+            //Helper.Print($"Rolled {dice.Value} on a {dice.Sides} sided dice", ConsoleColor.Yellow);
+            if (dice.Value == desiredValue)
+            {
+                match++;
+            }
+        }
 
-        Dice.RunExperiment(one, 100, 3);
+        Helper.Print($"Experiment details: {100 * (float)match / i:F2}% of rolls landed " +
+            $"on desired value ({desiredValue})\nTotal rolls: {i}", ConsoleColor.Green);
     }
 }
-
