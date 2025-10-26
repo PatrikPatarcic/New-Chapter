@@ -25,58 +25,24 @@ public class Dice
         random = new Random();
     }
 
-    public int GetSidesCount()
-    {
-            return sides;
-
-    }
-    public int GetRolledNumber()
-    {
-        return value;
-    }
-    public void SetRolledNumber(int value)
+    public int Sides { get  { return sides; }}
+    public int Value{ get { return value; } }
+    private void SetRolledNumber(int value)
     {
         this.value = Math.Clamp(value, 1, sides);
     }
-    public int Roll()
+    public void Roll()
     {
-        value = random.Next(1, sides +1);
-        return value;
+        SetRolledNumber(random.Next(1, sides +1));
     }
 
-    public static void RunExperiment(Dice dice, int numberOfExperiments, int x)
-    {
-        if (x < 1 || x > dice.GetSidesCount())
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("Out of bounds, dice only has {dice.GetSidesCount()} sides");
-            Console.ResetColor();
-            return;
-        }
-        int count = 0;
-        for(int i = 0; i < numberOfExperiments; i++)
-        {
-            if (dice.Roll() == x)
-            {
-                count++;
-            }
-        }
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine($"Rolled {x} a total of {count} times in {numberOfExperiments} rolls.");
-        Console.WriteLine($"Experimental probability: {100*(double)count / numberOfExperiments:F2}%");
-        Console.ResetColor();
-    }
+    
     public static void RunDemo()
     {
-        Dice one = new Dice();
-        Dice two = new Dice(10, 22);
+        Dice one = new Dice(); // Default 6 sided dice
+        Dice two = new Dice(10, 22); // Value will be clamped to 10
 
-        Console.WriteLine($"First dice: {one.GetSidesCount()}, rolled {one.GetRolledNumber()}");
-        Console.WriteLine($"Second dice: {two.GetSidesCount()}, rolled {two.GetRolledNumber()}");
-
-        Console.WriteLine($"First dice rolled: {one.Roll()}");
-        Console.WriteLine($"Second dice rolled: {two.Roll()}");
-        Console.WriteLine($"First dice: {one.GetSidesCount()}, rolled {one.GetRolledNumber()}");
-        Console.WriteLine($"Second dice: {two.GetSidesCount()}, rolled {two.GetRolledNumber()}");
+        Helper.Print($"First dice with {one.Sides} sides rolled {one.Value}", ConsoleColor.Cyan);
+        Helper.Print($"Second dice with {two.Sides} sides rolled {two.Value}", ConsoleColor.DarkGray);        
     }
 }
