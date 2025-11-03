@@ -17,4 +17,13 @@
     {
         Console.WriteLine(message);
     }
+
+    public static string Format(int[] array)
+    {
+        return "[" + string.Join(", ", array) + "]";
+    }
+    public static string Format(int[] array, int num)
+    {
+        return "[" + string.Join(", ", array.Take(num)) + "]";
+    }
 }

@@ -20,12 +20,18 @@ internal class Program
         //BigSum.Day3.testing(args);
 
         //Dice.RunDemo();
-
         //RunExperiment(new Dice(6, 1), 100, 4);
 
         //Learning_the_ropes_again.Oop.Av2.Program.main();
+        //Learning_the_ropes_again.Oop.Av1.Tester.main();
 
-        Learning_the_ropes_again.Oop.Av1.Tester.main();
+        //Learning_the_ropes_again.Oop.Av3.Koala.RunSimpleDemo();
+        //Learning_the_ropes_again.Oop.Av3.Temperature.RunSimpleDemo();
+        //Learning_the_ropes_again.Oop.Av3.ConsoleLogger.RunSimpleDemo();
+        //Learning_the_ropes_again.Oop.Av3.Distance.RunSimpleDemo();
+        //Learning_the_ropes_again.Oop.Av3.ComplexNumber.RunSimpleDemo();
+        //Learning_the_ropes_again.Oop.Av3.Sentance.RunSimpleDemo();
+        Learning_the_ropes_again.Oop.Av3.OnlineShoppingBasket.RunSimpleDemo();
     }
     public static void RunExperiment(Dice dice, int numberOfMatchedValue, int desiredValue)
     {
