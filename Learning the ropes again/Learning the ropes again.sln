@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AV3", "AV3\AV3.csproj", "{6
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Algorithms and data structures", "Algorithms and data structures\Algorithms and data structures.vcxproj", "{5B4111BF-F34D-453E-A5C0-2B3394F6C01F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proper Calendar", "Proper Calender\Proper Calendar.csproj", "{6C964B3C-679E-416D-A2EE-F5BDA86709E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{5B4111BF-F34D-453E-A5C0-2B3394F6C01F}.Release|x64.Build.0 = Release|x64
 		{5B4111BF-F34D-453E-A5C0-2B3394F6C01F}.Release|x86.ActiveCfg = Release|Win32
 		{5B4111BF-F34D-453E-A5C0-2B3394F6C01F}.Release|x86.Build.0 = Release|Win32
+		{6C964B3C-679E-416D-A2EE-F5BDA86709E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C964B3C-679E-416D-A2EE-F5BDA86709E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C964B3C-679E-416D-A2EE-F5BDA86709E9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6C964B3C-679E-416D-A2EE-F5BDA86709E9}.Debug|x64.Build.0 = Debug|Any CPU
+		{6C964B3C-679E-416D-A2EE-F5BDA86709E9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6C964B3C-679E-416D-A2EE-F5BDA86709E9}.Debug|x86.Build.0 = Debug|Any CPU
+		{6C964B3C-679E-416D-A2EE-F5BDA86709E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C964B3C-679E-416D-A2EE-F5BDA86709E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C964B3C-679E-416D-A2EE-F5BDA86709E9}.Release|x64.ActiveCfg = Release|Any CPU
+		{6C964B3C-679E-416D-A2EE-F5BDA86709E9}.Release|x64.Build.0 = Release|Any CPU
+		{6C964B3C-679E-416D-A2EE-F5BDA86709E9}.Release|x86.ActiveCfg = Release|Any CPU
+		{6C964B3C-679E-416D-A2EE-F5BDA86709E9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
