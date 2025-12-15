@@ -82,9 +82,15 @@ internal class Program
         List<int> squaredNumbers = Utilities.Transform(numbers, a);
         Console.WriteLine(string.Join(", ", squaredNumbers));
 
-        IEnumerable<int> squaredNumbers2 = numbers.Select(x => x * x); // using LINQ
-        IGrouping<int, int> groupedNumbers = numbers.GroupBy(x => x % 2).First(); // grouping by even and odd
-        IComparable<int> comparable = 5; // int implements IComparable<int>
+        var squaredNumbers2 = numbers.Select(x => x * x); // using LINQ
+        var smallNumbers= numbers.Where(x < 10); 
+        var skipTwo = squaredNumbers2 = numbers.Skip(2);
+        var groupedNumbers = numbers.GroupBy(x => x % 2).First(); // grouping by even and odd
+
+        var distinctNumbers = numbers
+            .Distinct() // removes duplicates
+            .OrderBy(x => x); // sorts ascending
+
     }
     static void Demo3()
     {
